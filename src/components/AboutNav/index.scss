@@ -1,0 +1,37 @@
+.about_nav {
+    :where(.css-dev-only-do-not-override-ed5zg0).ant-menu-light .ant-menu-submenu-selected >.ant-menu-submenu-title, :where(.css-dev-only-do-not-override-ed5zg0).ant-menu-light>.ant-menu .ant-menu-submenu-selected >.ant-menu-submenu-title{
+        color:rgb(0, 61, 166);
+    }
+    
+    .select {
+        padding: 14px 0;
+        background: linear-gradient(270.00deg, rgba(160,182,222,0.00),rgba(160,182,222,0.2) 49.792%,rgba(160,182,222,0.00) 100%);
+        .ant-menu-submenu-title{
+        >.ant-menu-title-content{
+
+        font-weight: 500;
+    }}
+        .ant-menu-overflow {
+            justify-content: center;
+        }
+        .ant-menu-horizontal{
+            border: 0;
+        }
+        .ant-menu-horizontal {
+            text-align: center;
+            font-size: 16px;
+            &>.ant-menu-item-selected {
+                font-weight: 500;
+                color: rgb(0, 61, 166) !important;
+            }
+            &>.ant-menu-item{
+                font-weight: 500;
+                color: rgb(142, 142, 142);
+            }
+        }
+        .ant-menu-light{
+            background-color: transparent;
+        }
+    }
+
+}

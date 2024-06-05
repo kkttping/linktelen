@@ -1,0 +1,35 @@
+.news_nav {
+    margin-top: 2rem;
+
+    .select {
+        padding: 14px 0;
+       
+        .ant-menu-overflow {
+            justify-content: center;
+        }
+        .ant-menu-horizontal{
+            border: 0;
+        }
+        .ant-menu-horizontal {
+            text-align: center;
+            font-size: 2.5rem;
+            :after{
+                  border-bottom-width: 0 !important;   
+                }
+            &>.ant-menu-item-selected {
+                font-weight: bold;
+                border-bottom-width: 0 !important;
+                color: rgb(0, 61, 166) !important;
+            }
+            &>.ant-menu-item{
+                font-weight: bold;
+                color: #333;
+                
+            }
+        }
+        .ant-menu-light{
+            background-color: transparent;
+        }
+    }
+
+}

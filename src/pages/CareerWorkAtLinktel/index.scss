@@ -1,0 +1,93 @@
+.career_work_at_linktel {
+  width: 100%;
+
+  .content {
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+    padding: 0 10vw;
+    box-sizing: border-box;
+    .img {
+      height: 380px;
+      display: flex;
+      justify-content: center;
+      margin: 0 20px;
+      width: 30vw;
+      @media screen and (max-width: 1000px) {
+        width: 100vw;
+      }
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .title {
+      margin-top: 79px;
+      margin-bottom: 65px;
+      padding: 20px;
+      max-width: 720px;
+      opacity: 0.8;
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+
+    .info {
+      margin-top: 65px;
+      margin-bottom: 20px;
+      padding: 20px;
+      max-width: 720px;
+
+      opacity: 0.8;
+      color: rgb(85, 85, 85);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: justify;
+    }
+
+    .info2 {
+      padding: 22px 0;
+      padding: 20px;
+      max-width: 720px;
+      border-top: 1px solid rgb(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+      opacity: 0.8;
+      color: rgb(85, 85, 85);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: justify;
+    }
+
+    .title2 {
+      margin: 40px 0;
+      color: rgb(0, 0, 0);
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 58px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+
+    .info3 {
+      padding: 20px;
+      max-width: 720px;
+      border-top: 1px solid rgb(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+      opacity: 0.8;
+      color: rgb(85, 85, 85);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: justify;
+    }
+  }
+}

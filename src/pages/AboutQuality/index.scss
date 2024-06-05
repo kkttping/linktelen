@@ -1,0 +1,63 @@
+.about_quality {
+    .card_item {
+        margin: 40px;
+        width: 684.36px;
+        height: 400px;
+    }
+    .content{
+        
+         .quality_top{  
+      display: flex;
+      line-height: 1.2;  
+      font-weight: bold;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 1000px;
+      margin: 3rem auto;
+       p1{
+      font-size: 1.5rem;
+        }
+    }
+       
+        .img_top{
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            img{
+                height: 100%;
+                width: 100%;
+                max-width: 1200px;               
+            }
+
+        }
+        .imgList{
+            max-width: 1200px;
+            margin: 0 -12px;
+            margin-left: auto;
+            margin-right: auto;
+            .ant-row{
+              gap:12px;  
+            }         
+            .img_box{
+                background-color: #f6f7fb;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                width: 22vw;
+                max-width: 288px;
+                height: 25vw;
+                max-height: 450px;
+                border: 1px solid #ebeef2;
+                border-radius: 8px;
+                img{
+                    width: 16vw;
+                    max-width: 160px;
+                }
+            }
+        }
+    }
+}

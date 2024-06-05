@@ -1,0 +1,126 @@
+.com_card_products {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    background: linear-gradient(192.53deg, rgb(94 94 94 / 25%) 0%, rgb(255 255 255) 50%);
+    .img {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        // background-image: url('../../static/img/item1.png');
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    
+
+    .bg_lin {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        // background-image: linear-gradient(180.00deg, rgba(215, 215, 215, 0.377), rgba(236, 241, 249, 0.00) 100%);
+        z-index: -1;
+    }
+
+    &:hover .name {
+        bottom: 200px;
+        color: #ffffff;
+        
+    }
+
+    &:hover .bg_hover {
+        opacity: 1;
+        
+    }
+
+    .bg_hover {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        color: #ffffff;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 12px;
+        box-sizing: border-box;
+        transition: all 1s ease-out;
+        overflow:hidden;
+        background: linear-gradient(192.53deg, rgba(0, 61, 166, 0) 25.563%, rgba(0, 61, 166, 0) 99.432%);
+        >div {
+        font-size: 2rem;
+        font-weight: 700;
+        bottom: 40px;
+        left: 32px;
+        width: 90%;
+        transition: all 0.5s ease-out;
+        z-index: 10;
+        line-height: 1.2;
+        color: #000;
+    }
+         >span {
+            opacity: 0;
+            max-width: 350px;
+            font-size: 14px;
+            position: absolute;
+            margin-bottom: -100px;
+            transition: all 0.5s ease-out;
+            margin-top:5px;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2; /* 超出几行省略 */
+                    overflow: hidden;
+        }
+        &:hover {
+             background: linear-gradient(192.53deg, rgba(0, 61, 166, 0) 25.563%, rgb(0, 61, 166) 99.432%);
+             color: #fff;
+             >span{
+                 position: relative;
+                 bottom: 0;
+                 opacity: 1;
+                 height: auto;
+                 margin-bottom: 16px;
+                 color: #fff;
+             }
+             .readmore {
+                     display: flex;     
+                 }
+            .name{
+                color: #fff;
+            }
+        }
+
+       
+
+        
+    }
+}
+.products{
+    @media (min-width: 1000px){
+    :where(.css-dev-only-do-not-override-ed5zg0).ant-col-xl-24{
+        flex: 0 0 33.33%;
+    }
+    }
+}
+.span{   
+    word-break: keep-all;
+    word-wrap: break-word; 
+    white-space: pre-wrap;
+    text-align:justify; 
+    text-justify:inter-ideograph;
+}

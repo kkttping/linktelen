@@ -1,0 +1,70 @@
+.card_person_info {
+    height: 100%;
+    width: 100%;
+    .content_info {
+        
+        width: 720px;
+        height: 250px;
+        padding: 40px 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title {
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0px;
+        }
+
+        .address,
+        .phone,
+        .email {
+            display: flex;
+            color: rgb(142, 142, 142);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0px;
+        }
+
+        .svg_address {
+            margin-right: 18px;
+            margin-top: 4px;
+            width: 20px;
+            height: 20px;
+            background-image: url('../../static/svg/person2.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        .svg_phone {
+            margin-right: 18px;
+            margin-top: 4px;
+
+            width: 20px;
+            height: 18px;
+            background-image: url('../../static/svg/phone.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+        }
+
+        .svg_email {
+            margin-right: 18px;
+            margin-top: 4px;
+
+            width: 20px;
+            height: 16px;
+            background-image: url('../../static/svg/email.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+        }
+    }
+}

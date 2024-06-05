@@ -1,0 +1,23 @@
+.products {
+
+    .ant-col,
+    .ant-col-md-24 {
+        overflow: hidden;
+
+    }
+
+    .card_item {
+        margin: 0 auto;
+        height: 560px;
+        @media (max-width: 720px){
+             height: 380px;
+         }
+    }
+    @media (min-width: 1200px){
+:where(.css-ed5zg0).ant-col-xl-12 {
+    display: block;
+    flex: 0 0 33.33%;
+    max-width: 50%;
+}}
+    
+}

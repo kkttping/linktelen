@@ -1,0 +1,166 @@
+.about_leadership {
+    .content {
+        padding: 0 2vw;
+
+        .human_img {
+            height: 700px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+
+            .select_control {
+                display: flex;
+                position: absolute;
+                right: 0;
+                cursor: pointer;
+
+                .left {
+                    background-color: rgb(0, 61, 166);
+                    width: 66px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        transform: rotateZ(180deg);
+                    }
+
+                }
+
+                .right {
+                    background-color: rgb(0, 61, 166);
+                    width: 66px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .bg {
+                width: 100%;
+                img {
+                    margin: 0 auto;
+                    width: 60%;
+                    min-width: 500px;
+
+                }
+            }
+
+            .name {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 360px;
+                background-color: rgb(0, 61, 166, 0.2);
+                color: rgb(255, 255, 255);
+                font-size: 64px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 900;
+            }
+        }
+
+        .infomation {
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            .name {
+                margin-left: 88px;
+                font-size: 64px;
+                font-weight: 700;
+                display: flex;
+                margin-bottom: 68px;
+
+                .person_svg {
+                    margin-top: 15px;
+                    width: 16px;
+                    height: 13px;
+                    background-image: url('../../static/svg/person.svg');
+                }
+            }
+
+            .info {
+
+                padding-left: 88px;
+                padding-right: 20px;
+
+                display: flex;
+                align-items: center;
+                color: rgb(85, 85, 85);
+                height: 360px;
+                background-color: rgb(196, 196, 196, 0.2);
+
+                div {
+                    width: 540px;
+                }
+            }
+        }
+
+        .select {
+            background: linear-gradient(270.00deg, rgba(160, 182, 222, 0.00), rgba(160, 182, 222, 0.2) 49.792%, rgba(160, 182, 222, 0.00) 100%);
+            box-sizing: border-box;
+            width: 100%;
+            height: 189px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: auto;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+            .select_img {
+                margin: 0 12px;
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                span {
+                    width: 100px;
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 14px;
+                }
+
+                
+            }
+
+            .activty {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(0, 61, 166, 0.7);
+                    z-index: 4;
+
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 14px;
+                    height: 14px;
+                    transform: translate(-50%);
+                    background-image: url('../../static/svg/selected.svg');
+                    z-index: 5;
+                }
+            }
+        }
+    }
+}
