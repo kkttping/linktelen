@@ -22,15 +22,15 @@ module.exports = {
       //   }
       // },
       "/items": {
-        target: "https://lincncms.zeaylu.com",
+        target: "https://cmsen.linktel.com",
         changeOrigin: true,
       },
       "/assets": {
-        target: "https://lincncms.zeaylu.com",
+        target: "https://cmsen.linktel.com",
         changeOrigin: true,
       },
       "/files": {
-        target: "https://lincncms.zeaylu.com",
+        target: "https://cmsen.linktel.com",
         changeOrigin: true,
       },
     },
