@@ -128,7 +128,12 @@ export default function CardOpportunities(props) {
       <div className="infomation">
         <div className="item">
           {/* <div className='type'>Country</div> */}
-          <div className="info">{data?.country},</div>
+          <div className="info">
+            {data?.country}
+            {"\u00A0"}
+            {"\u00A0"}
+            {"\u00A0"}
+          </div>
         </div>
         <div className="item">
           {/* <div className='type'>City</div> */}
