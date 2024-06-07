@@ -284,7 +284,9 @@ export default function AboutContact() {
                     }}
                   ></div>
                   <div className="item_text">
-                    <pre>{searchKeyWords("USA", mapList)?.text_top}</pre>
+                    <pre style={{ margin: 0, fontFamily: "inherit" }}>
+                      {searchKeyWords("USA", mapList)?.text_top}
+                    </pre>
                   </div>
                 </div>
               )}
@@ -297,20 +299,9 @@ export default function AboutContact() {
                     }}
                   ></div>
                   <div className="item_text">
-                    <pre>{searchKeyWords("Singapore", mapList)?.text_top}</pre>
-                  </div>
-                </div>
-              )}
-              {searchKeyWords("China", mapList)?.Office && (
-                <div className="item1">
-                  <div
-                    className="item_bg"
-                    style={{
-                      backgroundImage: `url(${ConstValue.url + "assets/" + searchKeyWords("China", mapList)?.top_icon})`,
-                    }}
-                  ></div>
-                  <div className="item_text">
-                    <pre> {searchKeyWords("China", mapList)?.text_top}</pre>
+                    <pre style={{ margin: 0, fontFamily: "inherit" }}>
+                      {searchKeyWords("Singapore", mapList)?.text_top}
+                    </pre>
                   </div>
                 </div>
               )}
@@ -323,7 +314,24 @@ export default function AboutContact() {
                     }}
                   ></div>
                   <div className="item_text">
-                    <pre>{searchKeyWords("Malaysia", mapList)?.text_top}</pre>
+                    <pre style={{ margin: 0, fontFamily: "inherit" }}>
+                      {searchKeyWords("Malaysia", mapList)?.text_top}
+                    </pre>
+                  </div>
+                </div>
+              )}
+              {searchKeyWords("China", mapList)?.Office && (
+                <div className="item1">
+                  <div
+                    className="item_bg"
+                    style={{
+                      backgroundImage: `url(${ConstValue.url + "assets/" + searchKeyWords("China", mapList)?.top_icon})`,
+                    }}
+                  ></div>
+                  <div className="item_text">
+                    <pre style={{ margin: 0, fontFamily: "inherit" }}>
+                      {searchKeyWords("China", mapList)?.text_top}
+                    </pre>
                   </div>
                 </div>
               )}

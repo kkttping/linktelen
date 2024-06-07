@@ -17,26 +17,26 @@ export default function Career() {
   const [infoBase, setInfoBase] = useState({});
 
   const toPage = (address, routerName) => {
-    if(address.indexOf('http')!==-1){
+    if (address.indexOf("http") !== -1) {
       window.open(address);
-      return
-  }
-    if(address==='')return
+      return;
+    }
+    if (address === "") return;
     navigate("/" + address);
   };
   useEffect(() => {
     getInfo();
-    getInfoBase()
+    getInfoBase();
   }, []);
   const getInfoBase = async () => {
-    let res = await Http.to.items('careerpage').readByQuery({
-        sort: ['id'],
+    let res = await Http.to.items("careerpage").readByQuery({
+      sort: ["id"],
     });
     setInfoBase(res.data);
-}
+  };
   const getInfo = async () => {
     let res = await Http.to.items("recruit").readByQuery({
-      sort: ["-sort", "date_updated"],
+      sort: ["-sort", "-date_updated"],
       filter: { status: "published" },
     });
     setInfo(res.data);
@@ -61,9 +61,7 @@ export default function Career() {
                 styleSelf={{ color: "#fff", objectfit: "cover" }}
                 titleout={infoBase?.lefttit}
                 titleIn={infoBase?.lefttit}
-                info={[
-                  infoBase?.leftoverview,
-                ]}
+                info={[infoBase?.leftoverview]}
               ></CardProducts>
             </div>
           </Col>
@@ -77,22 +75,20 @@ export default function Career() {
                 styleSelf={{ color: "#fff", objectfit: "cover" }}
                 titleout={infoBase?.righttit}
                 titleIn={infoBase?.righttit}
-                info={[
-                  infoBase?.rightoverview,
-                ]}
+                info={[infoBase?.rightoverview]}
               ></CardProducts>
             </div>
           </Col>
         </Row>
         <Row justify={"center"}>
           <Col>
-            <div className="title_name">{ infoBase?.lasttit}</div>
+            <div className="title_name">{infoBase?.lasttit}</div>
           </Col>
         </Row>
         <Row justify={"center"} className="creertable">
           {info.map((item, index) => {
             return (
-              <Col key={index}>
+              <Col key={index} lg={11} md={24}>
                 <div className="opportunities_item">
                   <CardOpportunities data={item} />
                 </div>
